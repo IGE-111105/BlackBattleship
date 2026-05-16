@@ -1,0 +1,73 @@
+{
+  "id": "a1b2c3d4-e5f6-4a5b-b6c7-d8e9f0a1b2c3",
+  "version": "2.0",
+  "name": "TestSuite_92500",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "11111111-1111-1111-1111-111111111111",
+    "name": "UserStoryTest1",
+    "commands": [{
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "value": "",
+      "comment": "O jogador abre a página principal do Battleship Online para poder iniciar um jogo."
+    }, {
+      "command": "assertTitle",
+      "target": "Battleship Online",
+      "value": "",
+      "comment": "Verifica se o título da página está correto."
+    }]
+  }, {
+    "id": "22222222-2222-2222-2222-222222222222",
+    "name": "UserStoryTest2",
+    "commands": [{
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "value": "",
+      "comment": "O jogador acede à página para consultar as regras."
+    }, {
+      "command": "verifyText",
+      "target": "css=body",
+      "value": "Rules of Battleship",
+      "comment": "O jogador consulta as regras do jogo para perceber como funciona a batalha naval online."
+    }]
+  }, {
+    "id": "33333333-3333-3333-3333-333333333333",
+    "name": "UserStoryTest3",
+    "commands": [{
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "value": "",
+      "comment": "O jogador abre a página principal."
+    }, {
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[contains(.,'Play with a friend')]",
+      "value": "",
+      "comment": "O jogador verifica se pode escolher jogar contra um amigo para poder criar uma partida partilhável."
+    }]
+  }, {
+    "id": "44444444-4444-4444-4444-444444444444",
+    "name": "UserStoryTest4",
+    "commands": [{
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "value": "",
+      "comment": "O jogador abre a página principal."
+    }, {
+      "command": "verifyElementPresent",
+      "target": "xpath=//button[contains(.,'Play with computer')]",
+      "value": "",
+      "comment": "O jogador verifica se pode escolher jogar contra um robot para poder jogar sem depender de outro jogador."
+    }]
+  }],
+  "suites": [{
+    "id": "99999999-9999-9999-9999-999999999999",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["11111111-1111-1111-1111-111111111111", "22222222-2222-2222-2222-222222222222", "33333333-3333-3333-3333-333333333333", "44444444-4444-4444-4444-444444444444"]
+  }],
+  "urls": ["https://papergames.io/en/battleship"],
+  "plugins": []
+}

@@ -30,4 +30,8 @@ Suite individual: `battleship.selenide.g111105`
 3. `Student111105UserStory3SelenideTest` - valida a opcao de jogar com amigo.
 4. `Student111105UserStory4SelenideTest` - valida a opcao de jogar contra adversario automatico.
 
+Suite individual: `battleship.selenide.g92500`
+
+1. `SelenideUserStoriesTest` - Implementação completa das User Stories 1 a 4 utilizando Selenide e Allure Reports.
+
 Os resultados Allure sao gerados em `target/allure-results`.
