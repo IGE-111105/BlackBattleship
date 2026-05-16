@@ -20,3 +20,14 @@ Grupo TP06-8
 2. `UserStory2Test` - valida que as regras do Battleship estao disponiveis na pagina.
 3. `UserStory3Test` - valida que existe uma opcao para jogar contra um amigo.
 4. `UserStory4Test` - valida que existe uma opcao para jogar contra um robot ou adversario automatico.
+
+## Suite Selenide e Allure
+
+Suite individual: `battleship.selenide.g111105`
+
+1. `Student111105UserStory1SelenideTest` - valida a abertura da pagina principal.
+2. `Student111105UserStory2SelenideTest` - valida a disponibilidade das regras.
+3. `Student111105UserStory3SelenideTest` - valida a opcao de jogar com amigo.
+4. `Student111105UserStory4SelenideTest` - valida a opcao de jogar contra adversario automatico.
+
+Os resultados Allure sao gerados em `target/allure-results`.
