@@ -1,6 +1,5 @@
 package battleship.g92500;
 
-import battleship.g92500.support.WebDriverSetup;
 import battleship.g92500.pages.UserStory2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
