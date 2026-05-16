@@ -25,9 +25,9 @@ Grupo TP06-8
 
 Suite individual: `battleship.selenide.g111105`
 
-1. `GuilhermeUserStory1SelenideTest` - valida a abertura da pagina principal.
-2. `GuilhermeUserStory2SelenideTest` - valida a disponibilidade das regras.
-3. `GuilhermeUserStory3SelenideTest` - valida a opcao de jogar com amigo.
-4. `GuilhermeUserStory4SelenideTest` - valida a opcao de jogar contra adversario automatico.
+1. `Student111105UserStory1SelenideTest` - valida a abertura da pagina principal.
+2. `Student111105UserStory2SelenideTest` - valida a disponibilidade das regras.
+3. `Student111105UserStory3SelenideTest` - valida a opcao de jogar com amigo.
+4. `Student111105UserStory4SelenideTest` - valida a opcao de jogar contra adversario automatico.
 
 Os resultados Allure sao gerados em `target/allure-results`.

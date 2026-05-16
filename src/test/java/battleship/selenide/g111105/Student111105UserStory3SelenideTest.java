@@ -1,6 +1,6 @@
 package battleship.selenide.g111105;
 
-import battleship.selenide.g111105.pages.GuilhermeBattleshipPage;
+import battleship.selenide.g111105.pages.Student111105BattleshipPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -14,9 +14,9 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Epic("BlackBattleship")
 @Feature("Selenide acceptance tests")
 @Owner("111105")
-class GuilhermeUserStory3SelenideTest extends GuilhermeSelenideTestSupport {
+class Student111105UserStory3SelenideTest extends Student111105SelenideTestSupport {
 
-    private final GuilhermeBattleshipPage page = new GuilhermeBattleshipPage();
+    private final Student111105BattleshipPage page = new Student111105BattleshipPage();
 
     @Test
     @Story("UserStoryTest3")

@@ -10,9 +10,9 @@ import static com.codeborne.selenide.Selenide.$$;
 import static com.codeborne.selenide.Selenide.open;
 
 /**
- * Page Object for Guilherme's Selenide acceptance test suite.
+ * Page Object for the 111105 Selenide acceptance test suite.
  */
-public class GuilhermeBattleshipPage {
+public class Student111105BattleshipPage {
 
     private static final String BATTLESHIP_URL = "https://papergames.io/en/battleship";
 
