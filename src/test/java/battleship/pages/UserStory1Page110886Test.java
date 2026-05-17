@@ -1,10 +1,6 @@
 package battleship.pages;
 
-import battleship.pages.UserStory1Page110886;
-import battleship.pages.BattleshipPageTest110886;
-
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
