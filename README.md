@@ -6,7 +6,10 @@ Grupo TP06-8
 - 111105 Guilherme Carolino dos Santos Calcao
 - 92500 Nuno Miguel Tomeno de Velez Venancio
 - 110886 Marta Pessoa Fonseca
+- 
+- ## Video de demonstracao
 
+Video final do projeto: https://youtu.be/T4k8MktRXV8
 ## Product Backlog
 
 1. Como jogador, quero abrir a pagina principal do Battleship Online para poder iniciar um jogo.
