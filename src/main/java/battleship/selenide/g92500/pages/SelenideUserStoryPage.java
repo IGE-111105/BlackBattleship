@@ -12,8 +12,8 @@ public class SelenideUserStoryPage {
 
     private final SelenideElement title = $("h1");
     private final SelenideElement body = $("body");
-    private final SelenideElement playWithFriendBtn = $x("//button[contains(.,'Play with a friend')]");
-    private final SelenideElement playWithComputerBtn = $x("//button[contains(.,'Play with computer')]");
+    private final SelenideElement playWithFriendBtn = $x("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'friend')]");
+    private final SelenideElement playWithComputerBtn = $x("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'robot') or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'computer')]");
 
     @Step("Abrir a página principal do Battleship Online")
     public void openPage() {

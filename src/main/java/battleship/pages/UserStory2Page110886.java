@@ -8,7 +8,7 @@ public class UserStory2Page110886 extends BattleshipPage {
     private final WebDriver driver;
 
     private static final By PLAY_WITH_FRIEND =
-            By.xpath("//button[contains(.,'Friend')]");
+            By.xpath("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'friend')]");
 
     public UserStory2Page110886(WebDriver driver) {
         super(driver);

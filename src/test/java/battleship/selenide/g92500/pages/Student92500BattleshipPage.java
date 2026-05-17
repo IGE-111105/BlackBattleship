@@ -12,9 +12,9 @@ public class Student92500BattleshipPage {
     // Locators
     private final SelenideElement gameTitle = $("h1");
     private final SelenideElement body = $("body");
-    private final SelenideElement playWithFriendButton = $x("//button[contains(.,'Play with a friend')]");
+    private final SelenideElement playWithFriendButton = $x("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'friend')]");
     private final SelenideElement playWithOnlinePlayerButton = $x("//button[contains(.,'Play online')]");
-    private final SelenideElement playWithComputerButton = $x("//button[contains(.,'Play with computer')]");
+    private final SelenideElement playWithComputerButton = $x("//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'robot') or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'computer')]");
 
     public void openPage() {
         open(url);

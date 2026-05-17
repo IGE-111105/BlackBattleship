@@ -15,7 +15,7 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
  * Classe base para testes com Selenide.
  * @author 110886
  */
-public abstract class BattleshipPageTestSelenide110886 {
+abstract class BattleshipPageTestSelenide110886 {
 
     protected WebDriver driver;
 

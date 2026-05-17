@@ -17,7 +17,7 @@ public class UserStory4 {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//button[contains(.,'Play with computer')]")
+    @FindBy(xpath = "//button[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'robot') or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'computer')]")
     private WebElement playWithComputerButton;
 
     /**
