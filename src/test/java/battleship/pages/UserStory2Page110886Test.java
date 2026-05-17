@@ -1,8 +1,5 @@
 package battleship.pages;
 
-import battleship.pages.UserStory2Page110886;
-import battleship.pages.BattleshipPageTest110886;
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
