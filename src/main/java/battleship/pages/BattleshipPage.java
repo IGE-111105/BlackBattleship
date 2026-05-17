@@ -10,41 +10,85 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * The type Battleship page.
+ */
 public class BattleshipPage {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
 
+    /**
+     * Instantiates a new Battleship page.
+     *
+     * @param driver the driver
+     */
     public BattleshipPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
+    /**
+     * Open.
+     */
     public void open() {
         driver.get("https://papergames.io/en/battleship");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body")));
     }
 
+    /**
+     * Gets title text.
+     *
+     * @return the title text
+     */
     public String getTitleText() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("h1"))).getText();
     }
 
+    /**
+     * Gets page text.
+     *
+     * @return the page text
+     */
     public String getPageText() {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("body"))).getText();
     }
 
+    /**
+     * Gets page source.
+     *
+     * @return the page source
+     */
     public String getPageSource() {
         return driver.getPageSource();
     }
 
+    /**
+     * Contains text boolean.
+     *
+     * @param text the text
+     * @return the boolean
+     */
     public boolean containsText(String text) {
         return getPageText().toLowerCase().contains(text.toLowerCase());
     }
 
+    /**
+     * Contains in source boolean.
+     *
+     * @param text the text
+     * @return the boolean
+     */
     public boolean containsInSource(String text) {
         return getPageSource().contains(text);
     }
 
+    /**
+     * Contains any text boolean.
+     *
+     * @param values the values
+     * @return the boolean
+     */
     public boolean containsAnyText(String... values) {
         for (String value : values) {
             if (containsText(value)) {
@@ -55,6 +99,12 @@ public class BattleshipPage {
         return false;
     }
 
+    /**
+     * Has visible interactive element containing boolean.
+     *
+     * @param values the values
+     * @return the boolean
+     */
     public boolean hasVisibleInteractiveElementContaining(String... values) {
         List<WebElement> elements = driver.findElements(By.cssSelector("a, button, input[type='button'], input[type='submit']"));
 
